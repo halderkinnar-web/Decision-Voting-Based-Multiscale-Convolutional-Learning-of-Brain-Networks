@@ -140,3 +140,61 @@ The saliency CSV contains fold, scale, subject index, predicted class, node inde
 The repository preserves the core method and hyperparameters in the supplied script. It separates configuration, data loading, preprocessing, graph construction, model, training, baselines, metrics, and explanation into modules.
 
 The implementation does **not** include raw MRI processing, connectome generation, an atlas label mapping, external validation, nested hyperparameter tuning, or a formal clinical interpretability study. The supplied script itself did not establish these components. The new saliency output should therefore be described accurately as an added model-explanation analysis.
+
+## 9. Upload this project to GitHub
+
+### A. Create a repository on GitHub
+
+1. Sign in at https://github.com/.
+2. Click **New repository**.
+3. Set the repository name, for example `decision-voting-brain-networks`.
+4. Add a short description using the paper title.
+5. Choose **Public** if anyone should be able to view the code through the repository link. Choose **Private** if access should be restricted to invited collaborators.
+6. Do not initialise with a README if you are uploading this complete project, because this ZIP already contains one.
+7. Click **Create repository**.
+
+### B. Upload using the GitHub website (no terminal required)
+
+1. Extract the ZIP file on your computer.
+2. Open the newly created GitHub repository.
+3. Select **Add file → Upload files**.
+4. Open the extracted project folder and select its contents (including `README.md`, `src`, `configs`, `requirements.txt`, and `run.py`). Upload the contents of the project folder, not an extra enclosing folder.
+5. Drag the selected files/folders into GitHub's upload area.
+6. Enter a commit message such as `Add reproducible research code and README`.
+7. Click **Commit changes**.
+8. Check that `README.md` appears on the repository front page and that the folder structure is visible.
+
+### C. Upload using Git (optional)
+
+```bash
+git init
+git add .
+git commit -m "Add multiscale brain network research code"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/decision-voting-brain-networks.git
+git push -u origin main
+```
+
+Replace `YOUR-USERNAME` with your GitHub username and use the repository URL shown by GitHub. Run these commands from inside the extracted project folder.
+
+## 10. Share a link to the code
+
+For a **public** repository, share:
+
+```text
+https://github.com/YOUR-USERNAME/decision-voting-brain-networks
+```
+
+Anyone with the link can view and clone the repository. They do not need your GitHub password.
+
+For a **private** repository, a link alone is not enough: you must invite each person as a collaborator or otherwise grant them access.
+
+To cite a specific version in a paper, create a GitHub release or archive the commit hash. A DOI can be obtained by connecting the public GitHub repository to Zenodo.
+
+## 11. Suggested repository description
+
+Decision-voting multiscale graph convolutional learning for structural and functional brain connectomes, with independent atlas-specific GCNs, soft probability voting, logistic-regression baselines, cross-validation, and gradient-based node saliency.
+
+## 12. Suggested citation
+
+Add the final, verified bibliographic citation for the paper here before making the repository public. Confirm author names, venue/preprint status, year, DOI, and version from the authoritative publication record rather than relying only on the script header.
